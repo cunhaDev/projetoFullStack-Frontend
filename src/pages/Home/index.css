@@ -1,10 +1,11 @@
 .home-container{
-  background: #dddfe2;
-  max-width: 980px;
+  background: #9368f7;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 50px 0;
   text-align: center;
   margin-top: 50px;
+  border-radius: 4px;
 }
 
 .home-container ul{
@@ -14,31 +15,34 @@
   grid-gap: 30px;
   margin-top: 50px;
   margin: 5px;
+  border-radius: 8px;
 }
 
 .home-container ul li{
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
   margin: 5px;
 }
 
 .home-container ul li footer{
   flex: 1;
-  background: #FFF;
+  background: #8257e6;
   border: 1px solid #eee;
   padding: 15px 20px;
   text-align: left;
-  border-radius: 0 0  5px 5px;     
+  border-radius: 0 0  5px 5px;
+  text-decoration-color: #eee;     
 }
 
 .home-container ul li footer strong{
   font-size: 16px;
-  color: #333;
+  color: #eee;
 }
 
 .home-container ul li footer p{
       font-size: 14px;
       line-height: 20px;
-      color:#999;
+      color:#eee;
       margin-top: 5px;
 }

@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from "react";
 import "./index.css";
 import api from "../../server/api";
+
 export default function Home(){
 
 const [users, setUsers] = useState([]);
@@ -19,13 +20,13 @@ const [users, setUsers] = useState([]);
 return (
   <div className="home-container">
     <ul>
-    {users.map(user => (
- <li key={user.id}>  
-    <footer>            
-    <strong>Nome: {user.nome}</strong>
-    <p>E-mail: {user.email} </p>
-  </footer>
-</li>
+        {users.map(user => (
+            <li key={user.id}>  
+                <footer>            
+                  <strong>Nome: {user.nome}</strong>
+                  <p>E-mail: {user.email} </p>
+                </footer>
+            </li>
     ))}
     </ul>
   </div>
