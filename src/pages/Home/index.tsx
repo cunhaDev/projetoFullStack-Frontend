@@ -29,7 +29,7 @@ return (
         {users.map(user => (
             <li key={user.id}>  
                 <footer>            
-                  <strong>Nome: {user.nome}</strong>
+                  <strong>Nome: {user.nome} </strong>
                   <p>E-mail: {user.email} </p>
                 </footer>
             </li>
