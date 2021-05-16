@@ -2,9 +2,15 @@ import React,{useState, useEffect} from "react";
 import "./index.css";
 import api from "../../server/api";
 
+interface User{
+  id: string;
+  nome: string;
+  email: string;
+}
+
 export default function Home(){
 
-const [users, setUsers] = useState([]);
+const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => { 
     async function loadUsers(){
